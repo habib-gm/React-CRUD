@@ -1,11 +1,16 @@
 {
   "Post": {
-    "_": { "items": 20 },
-    "title": { "string": {} },
-    "comments": { "hasMany": "Comment" }
+    "_": { "items": 40 },
+    { 
+    "id": { "int": { "min": 0, "max": 1000000 } } 
+    "firstName" : { "string": {} },
+    "lastName" : { "string": {} },
+    "age" : { "int": { "min": 18, "max": 60 } },
+    "gender" : { "int": { "min": 0, "max": 1 } },
+    "salary" : { "int": { "min": 1000, "max": 100000 } },
+    "role" : { "string": {}  },
+    "description": {
+    "loremParagraphs": { "minLength": 200, "maxLength": 500 }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": { "belongsTo": "Post" }
-  }
+  },
 }
