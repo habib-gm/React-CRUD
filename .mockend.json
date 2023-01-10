@@ -8,8 +8,6 @@
     "gender" : { "int": { "min": 0, "max": 1 } },
     "salary" : { "int": { "min": 1000, "max": 100000 } },
     "role" : { "string": {}  },
-    "description": {
-    "loremParagraphs": { "minLength": 200, "maxLength": 500 }
-  },
+    "description": { "loremParagraphs": { "minLength": 200, "maxLength": 500 } },
   },
 }
